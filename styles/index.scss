@@ -1,0 +1,73 @@
+@forward './var/';
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-secondary);
+    background-color: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+section{
+    .div1{
+        margin-top: 15vh;
+        margin-bottom: 4rem;
+        color: var(--clr-gold);
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+        
+    }
+    .div-container{
+        max-width: var(--fixed-width);
+        // width: 90vw;
+        margin: 0 auto;
+        .div2,.div3,.div4{
+            background-color: var(--clr-white);
+            border-radius: var(--radius);
+            box-shadow: var(--light-shadow);
+            padding: 1em 1em 0 1em;
+            margin-bottom: 2em;
+            .q-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: capitalize;
+                padding-bottom: 1em;
+                 p{
+                    margin-bottom: 0;
+                    letter-spacing: var(--spacing);
+                    color: var(--clr-grey-1);
+                }
+                    button{
+                        font-size: 1.5rem;
+                        background: transparent;
+                        border-color: transparent;
+                        cursor: pointer;
+                        color: var(--clr-gold);
+                        transition: var(--transition);
+                }
+            }
+            .q-text {
+                visibility: visible;
+            }
+        }
+    }
+
+}
+
+button:hover {
+    rotate: 90deg;
+    transition: 0.5s;
+}
