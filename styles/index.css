@@ -68,6 +68,8 @@ section .div-container {
   margin: 0 auto;
 }
 section .div-container .div2, section .div-container .div3, section .div-container .div4 {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
@@ -95,7 +97,7 @@ section .div-container .div2 .q-title button, section .div-container .div3 .q-ti
   transition: var(--transition);
 }
 section .div-container .div2 .q-text, section .div-container .div3 .q-text, section .div-container .div4 .q-text {
-  visibility: visible;
+  color: grey;
 }
 
 button:hover {
